@@ -5,9 +5,9 @@ RUN mkdir $APP_HOME
 RUN mkdir $APP_HOME/staticfiles
 WORKDIR $APP_HOME
 
-LABEL maintainer='alexisdevgrp@gmail.com'
-LABEL youtube="N/A"
-LABEL decription="Development image for Data Glossarz"
+LABEL maintainer='api.imperfect@gmail.com'
+LABEL youtube="https://www.youtube.com/c/APIImperfect"
+LABEL decription="Development image for Real Estate Project"
 
 ENV PYTHONDONTWRITEBYTECODE 1
 
@@ -36,3 +36,4 @@ RUN sed -i 's/\r$//g' /start
 RUN chmod +x /start
 
 ENTRYPOINT [ "/entrypoint"]
+
